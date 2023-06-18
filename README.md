@@ -1,11 +1,11 @@
-About r-projmgr
-===============
+About r-projmgr-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-projmgr-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/emilyriederer/projmgr
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-projmgr-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provides programmatic access to 'GitHub' API with a focus on project management.  Key functionality includes setting up issues and milestones from R objects or 'YAML' configurations, querying outstanding or completed tasks, and generating progress updates in tables, charts, and RMarkdown reports. Useful for those using 'GitHub' in personal, professional, or academic settings with an emphasis on streamlining the workflow of data analysis projects.
 
