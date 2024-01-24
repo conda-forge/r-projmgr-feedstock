@@ -1,4 +1,4 @@
-{% set version = '0.1.0' %}
+{% set version = "0.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/projmgr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/projmgr/projmgr_{{ version }}.tar.gz
-  sha256: 82d5ad219a1a76cdbc95211cafc7672e15931ac1fe1350d73f77736528ebdac7
+  sha256: 135dbc1499bca38435059daeb39737671b72b62576542d2c33d05eb8f7374972
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -40,12 +40,8 @@ test:
 about:
   home: https://github.com/emilyriederer/projmgr
   license: MIT
-  summary: Provides programmatic access to 'GitHub' API with a focus on project management.  Key
-    functionality includes setting up issues and milestones from R objects or 'YAML'
-    configurations, querying outstanding or completed tasks, and generating progress
-    updates in tables, charts, and RMarkdown reports. Useful for those using 'GitHub'
-    in personal, professional, or academic settings with an emphasis on streamlining
-    the workflow of data analysis projects.
+  summary: Provides programmatic access to 'GitHub' API with a focus on project management.  Key functionality includes setting up issues and milestones from R objects or 'YAML' configurations, querying outstanding or completed tasks, and generating progress updates in tables, charts, and RMarkdown reports. Useful for those
+    using 'GitHub' in personal, professional, or academic settings with an emphasis on streamlining the workflow of data analysis projects.
   license_family: MIT
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
