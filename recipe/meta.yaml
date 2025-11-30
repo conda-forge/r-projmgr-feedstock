@@ -1,4 +1,4 @@
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/projmgr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/projmgr/projmgr_{{ version }}.tar.gz
-  sha256: 135dbc1499bca38435059daeb39737671b72b62576542d2c33d05eb8f7374972
+  sha256: 63c511d5f6a5ee13c145fb9208e26abccac1c4cbee66c120405b8d2a8e6e2194
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
